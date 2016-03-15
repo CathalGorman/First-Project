@@ -1,0 +1,15 @@
+For the tenant table I took it from the narative that not all tenants will have a registration number 
+so that can't be used as a primary key.
+
+The exported database will not work without first creating councildatabase in localhost 
+and importing into this database.Please create a database name 
+and import councildatabase.sql (this is only one which will imprt correctly).
+
+
+
+councildatabase1.sql is database before codds rules changes are made.
+
+testdata.sql has test data
+
+DatabaseTables.sql has just the tables and keys
+

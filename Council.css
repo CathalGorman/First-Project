@@ -1,0 +1,64 @@
+
+	
+body{
+   background-image:url(Sailhouse.jpg);
+   background-size:1380px 760px;
+   background-repeat: no-repeat;
+   font-family: georgia, serif;}
+		
+h3,a,p{
+	color: darkblue;
+	text-align:center;
+	
+}
+h1{
+	color:yellow;
+	text-align:center;
+}
+	
+section{
+	text-align:center;
+	color:darkblue;}
+nav {
+	background-color: lightgrey;
+	float:right;
+	margin-top: 3px;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	margin-left: 60px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	padding-left: 20px;
+	padding-bottom:20px;
+	padding-right:20px;
+	padding-top:10px;
+	
+	}
+	
+article{
+	float:center;
+	background-color: lightgrey;
+	margin-bottom:0px;
+	margin-left:100px;
+	margin-right:200px;
+	margin-top:3px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	}
+
+	
+footer{
+	float:bottom;
+	margin-bottom:0px;
+	background-color: lightgrey;
+	border-width: 2px;
+	border-color: black;
+	margin-left:100px;
+	margin-right:200px;
+	border-style: solid;
+	padding-bottom:0px;
+	padding-right:10px;
+	margin-top:0px;
+}

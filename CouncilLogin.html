@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href = Council.css type = "text/css" rel = "stylesheet" />
+    <head>
+        <title>Login page</title>
+		<style>
+		article { 
+				padding-bottom:100px;
+				padding-left:20px;
+				padding-top:30px;
+				text-align:center;
+				margin-left:100px;
+				margin-right:100px;
+		}
+		</style>
+		<script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "Admin" && form.pswrd.value == "Cathal") {
+                    window.open('CouncilHomepage.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username Incorrect")/*displays error message*/
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Council Login Page</h1>
+		<article>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+		</article>
+        
+    </body>
+</html>

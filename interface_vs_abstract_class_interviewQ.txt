@@ -1,0 +1,7 @@
+Will be asked this in interview
+interface vs abstract class.
+
+Both are abstract types but they have fundamentaly different usages.
+An interface is just a role that any class can play and is not tied to any specific .
+An abstract class is tied to heirarchy and is the base class of a whole heirarchy it can have a 
+mix of abstract and implememnted and its function is to define the state and behaviour of a whole heirarchy.

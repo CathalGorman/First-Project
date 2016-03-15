@@ -1,0 +1,41 @@
+
+	
+body {
+   background-image:url(housing.jpg);
+
+		font-family: georgia, serif;}
+		
+h1,h2 ,h3,a{color: darkred;}
+
+p  {
+	color: darkred;
+	text-align:center;
+	}
+
+nav {
+	background-color: lightgrey;
+	float:right;
+	margin-top: 29px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	padding-left: 20px;
+	padding-bottom:20px;
+	padding-right:10px;
+	padding-top:10px;
+	}
+	
+article{
+	float:center;
+	background-color: lightgrey;
+	margin-bottom:50px;
+	margin-left:100px;
+	margin-right:200px;
+	margin-top:50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	}

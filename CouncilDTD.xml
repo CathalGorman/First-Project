@@ -1,0 +1,24 @@
+<!DOCTYPE council [
+<!ELEMENT council((property|tradesmen)+)>
+<!ELEMENT property((address|repairs|tenant)+)>
+<!ELEMENT tradesmen((skill|name|phone|availability|equipment)+)>
+<!ELEMENT repairs((type|description|urgency)+)>
+<!ELEMENT tenant((name|registration number|address|phone|email)+)>
+<!ELEMENT equipment((type|state of repair|last inspection date)+)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT skill(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ELEMENT availability(#PCDATA)>
+<!ELEMENT type(#PCDATA)>
+<!ELEMENT description(#PCDATA)>
+<!ELEMENT urgency(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT registration number(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT type(#PCDATA)>
+<!ELEMENT state of repair(#PCDATA)>
+<!ELEMENT last inspection date(#PCDATA)>
+]>

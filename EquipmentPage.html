@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href = Council.css type = "text/css" rel = "stylesheet" />
+		
+		<title>Equipment</title>
+	
+			<meta chttp-equiv = "content-type" content = "text/html,charset=utf-8"/></meta>
+  
+				<style>
+						form.a{
+						float:top;
+						color:yellow;
+						text-indent:1028px;
+						}
+				</style>
+					
+					<script>
+					function validateForm() {
+						var x = document.forms["myForm"]["Equipment ID"].value;
+						if (x == null || x == "") {
+							alert("Property ID must be filled out");
+							return false;
+						}
+					}
+					</script>
+	
+
+</head>
+
+<body>
+	
+	<header>
+	<h1> South Dublin Council</h1>
+		<form class = "a" action="equipselection.php" method = "get">
+		<i>Search </i><input type="text" name="term">
+		<input type="submit">
+		</form>
+	</header>
+		
+		<nav>
+		    
+		<p>
+		<li><a href=CouncilHomepage.html>Homepage</a>
+		<li><a href=TenantsPage.html>Tenants</a>
+		<li><a href=PropertyPage.html>Property</a>
+		<li><a href=RepairsPage.html>Repairs</a>
+		<li><a href=TradesmenPage.html>Tradesmen</a>
+
+		</p>
+		</nav>
+			<article>
+			<section>
+			<h3> Equipment Details </h3>
+			<p><form action="equipmentinsert.php"  method="post">
+				Equipment ID:<br></br> <input type="number" name="equipment_id" required/><br></br>
+				Type:<br></br> <input type="text" name="type" /><br></br>				
+				Last Inspection Date:<br></br> <input type="date" name="last_inspection_date" /><br></br>
+				State of Repair:<br></br>
+								<input type="radio" name="state_of_repair" value="in workshop" /> In Workshop<br></br>
+								<input type="radio" name="state_of_repair" value="good" checked> Good<br></br>
+								<input type="radio" name="state_of_repair" value="bad"> Bad<br></br>
+				Tradesmen ID:<br></br> <input type="number" name="tradesmen_id" /><br></br>
+				
+				<input type="submit" name="Submit" value="Submit"/>
+			</form></p>
+			</section>
+			</article>
+
+		
+
+			<footer>
+			
+			<p>Copyright Dublin Council</p>
+			</footer>
+</body>
+
+</html>

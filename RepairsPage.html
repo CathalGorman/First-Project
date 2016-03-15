@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href = Council.css type = "text/css" rel = "stylesheet" />
+		
+		<title>Repairs</title>
+	
+			<meta chttp-equiv = "content-type" content = "text/html,charset=utf-8"/></meta>
+  
+				<style>
+				h1 {text-align:center;}
+				h3 {text-align:center;}
+				a {text-align:center;}
+				
+
+				</style>				
+				
+				<script>
+				function validateForm() {
+					var x = document.forms["myForm"]["Project ID"].value;
+					if (x == null || x == "") {
+						alert("Project ID must be filled out");
+						return false;
+					}
+				}
+				</script>
+	
+
+</head>
+
+<body>
+	
+	<header>
+	<h1> South Dublin Council Housing </h1>
+	</header>
+		
+		<nav>
+		<p>
+		<li><a href=CouncilHomepage.html>Homepage</a>
+		<li><a href=TenantsPage.html>Tenants</a>
+		<li><a href=PropertyPage.html>Property</a>
+		<li><a href=TradesmenPage.html>Tradesmen</a>
+		<li><a href=EquipmentPage.html>Equipment</a>
+
+		</p>
+		</nav>
+
+		<article><h3> Repairs Details </h3>
+
+			<section>
+			<p><form name="myForm" action="myForm" onsubmit="return validateForm()" method="post">
+				Project ID: <br></br><input type="number" name="Project ID" ><br></br>
+				Repair Type:<select name="cars">
+							<option value="volvo">Plumbing</option>
+							<option value="saab">Electricity</option>
+							<option value="fiat">Carpentry</option>
+							<option value="audi">Tiling</option>
+							</select><br></br>
+				Description:<br></br> <input type="text" name="Description" ><br></br>
+				Property ID:<br></br> <input type="number" name="Property ID" ><br></br>
+				Urgency:<input type="radio" name="Urgency" value="1 day" >1 Day
+								 <input type="radio" name="Urgency" value="1 week" checked >1 Week
+								 <input type="radio" name="Urgency" value="1 month" >1 Month<br></br>
+				Tradesmen ID:<br></br> <input type="number" name="Tradesmen ID" ><br></br>
+				Completion Date: <br></br><input type="date" name="Completion Date" ><br></br>
+				
+				
+				<input type="submit" name="Submit" value="Submit"/>
+			</form></p>
+			</section>
+
+		</article>
+
+			<footer>
+			
+			<p>Copyright Dublin Council</p>
+			</footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href = Council.css type = "text/css" rel = "stylesheet" />
+		
+		<title>Property</title>
+	
+			<meta chttp-equiv = "content-type" content = "text/html,charset=utf-8"/></meta>
+  
+				<style>
+				h1 {text-align:center;}
+				h3 {text-align:center;}
+				a {text-align:center;}
+				
+				
+			
+
+				
+				
+				
+				form{align:center;
+				}
+  
+
+				aside{float:right;}
+
+				</style>
+				<script>
+function validateForm() {
+    var x = document.forms["myForm"]["Property ID"].value;
+    if (x == null || x == "") {
+        alert("Property ID must be filled out");
+        return false;
+    }
+}
+</script>
+	
+
+</head>
+
+<body>
+
+
+	<header>
+	<h1> South Dublin Council Housing </h1>
+	</header>
+		
+		<nav>
+		<p>
+		<li><a href=CouncilHomepage.html>Homepage</a>
+		<li><a href=TenantsPage.html>Tenants</a>
+		<li><a href=RepairsPage.html>Repairs</a>
+		<li><a href=TradesmenPage.html>Tradesmen</a>
+		<li><a href=EquipmentPage.html>Equipment</a>
+
+		</p>
+		</nav>
+
+		<article><h3> Property Details</h3>
+
+			<section>
+			<p><form name="myForm" action="myForm" onsubmit="return validateForm()" method="post">
+				Property ID:<br></br> <input type="number" name="Property ID" /><br></br><br></br>
+				Address: <br></br><input type="text" name="Address" /><br></br><br></br>
+				Tenant ID:<br></br> <input type="number" name="Tenant ID" /><br></br><br></br>
+				
+				<input type="submit" name="Submit" value="Submit"/>
+			</form></p>
+			</section>
+
+		</article>
+
+		<footer>
+			
+		<p>Copyright Dublin Council</p>
+		</footer>
+</body>
+
+</html>
